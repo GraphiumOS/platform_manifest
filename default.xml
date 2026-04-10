@@ -3,6 +3,7 @@
 'adevtool generate-manifest' from the root of OS checkout. -->
 <manifest>
   <remote name="grapheneos" fetch="https://github.com/GrapheneOS/" revision="refs/heads/16-qpr2"/>
+  <remote name="graphiumos" fetch="https://github.com/GraphiumOS/" revision="refs/heads/16-qpr2"/>
   <remote name="grapheneos-gitlab" fetch="https://gitlab.com/grapheneos/" revision="refs/heads/16-qpr2"/>
   <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/"/>
   <default revision="refs/tags/android-16.0.0_r4" remote="aosp" sync-j="4"/>
@@ -615,7 +616,7 @@
   <project path="external/zucchini" name="platform/external/zucchini" groups="pdk"/>
   <project path="external/zxing" name="platform/external/zxing" groups="pdk"/>
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk,sysui-studio" remote="grapheneos" aosp-name="platform/frameworks/av"/>
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/frameworks/base"/>
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="graphiumos" aosp-name="platform/frameworks/base"/>
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk"/>
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk"/>
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk"/>
@@ -741,7 +742,7 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs"/>
   <project path="packages/apps/ImsServiceEntitlement" name="platform/packages/apps/ImsServiceEntitlement" groups="pdk-fs"/>
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs"/>
-  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="grapheneos" aosp-name="platform/packages/apps/Launcher3"/>
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="graphiumos" aosp-name="platform/packages/apps/Launcher3"/>
   <project path="packages/apps/LogViewer" name="platform_packages_apps_LogViewer" groups="pdk-fs" remote="grapheneos"/>
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs"/>
   <project path="packages/apps/Multiuser" name="platform/packages/apps/Multiuser" groups="pdk-fs"/>
@@ -758,7 +759,7 @@
   <project path="packages/apps/SampleLocationAttribution" name="platform/packages/apps/SampleLocationAttribution" groups="pdk-fs"/>
   <project path="packages/apps/SecureElement" name="platform/packages/apps/SecureElement" groups="apps_se,pdk-fs,pdk-cw-fs"/>
   <project path="packages/apps/Seedvault" name="platform_packages_apps_Seedvault" remote="grapheneos"/>
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="grapheneos" aosp-name="platform/packages/apps/Settings"/>
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="graphiumos" aosp-name="platform/packages/apps/Settings"/>
   <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/SettingsIntelligence"/>
   <project path="packages/apps/SetupWizard2" name="platform_packages_apps_SetupWizard2" remote="grapheneos"/>
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs"/>
@@ -960,7 +961,7 @@
   <project path="system/secure_element" name="platform/system/secure_element" groups="pdk"/>
   <project path="system/security" name="platform/system/security" groups="pdk"/>
   <project path="system/see/authmgr" name="platform/system/see/authmgr" groups="pdk"/>
-  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="grapheneos" aosp-name="platform/system/sepolicy"/>
+  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="graphiumos" aosp-name="platform/system/sepolicy"/>
   <project path="system/server_configurable_flags" name="platform/system/server_configurable_flags" groups="pdk"/>
   <project path="system/teeui" name="platform/system/teeui" groups="pdk"/>
   <project path="system/testing/gtest_extras" name="platform/system/testing/gtest_extras" groups="pdk"/>
