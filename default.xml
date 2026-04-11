@@ -4,6 +4,7 @@
 <manifest>
   <remote name="grapheneos" fetch="https://github.com/GrapheneOS/" revision="refs/heads/16-qpr2"/>
   <remote name="graphiumos" fetch="https://github.com/GraphiumOS/" revision="refs/heads/16-qpr2"/>
+  <remote name="graphium" fetch="https://github.com/GraphiumOS/" revision="refs/heads/16-qpr2"/>
   <remote name="grapheneos-gitlab" fetch="https://gitlab.com/grapheneos/" revision="refs/heads/16-qpr2"/>
   <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/"/>
   <default revision="refs/tags/android-16.0.0_r4" remote="aosp" sync-j="4"/>
